@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UIGradientView_Example' do
+  pod 'UIGradientView', :path => '../'
+
+  target 'UIGradientView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
