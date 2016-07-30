@@ -1,0 +1,16 @@
+PODS:
+  - UIGradientView (0.1.0)
+
+DEPENDENCIES:
+  - UIGradientView (from `../`)
+
+EXTERNAL SOURCES:
+  UIGradientView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIGradientView: b18264563aa9c929f70a6fb39b0bf5730b3c6442
+
+PODFILE CHECKSUM: 8baf86bdc6d5d10865833190f430cf422183c015
+
+COCOAPODS: 1.0.1
