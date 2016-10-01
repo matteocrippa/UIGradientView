@@ -8,19 +8,19 @@
 
 import UIKit
 
-@IBDesignable public class UIGradientView: UIView {
+@IBDesignable open class UIGradientView: UIView {
     
-    @IBInspectable public var startColor: UIColor = UIColor.whiteColor()
-    @IBInspectable public var endColor: UIColor = UIColor.blackColor()
+    @IBInspectable open var startColor: UIColor = UIColor.white
+    @IBInspectable open var endColor: UIColor = UIColor.black
     
-    @IBInspectable public var startLocation: Double = 0.05
-    @IBInspectable public var endLocation: Double = 0.95
+    @IBInspectable open var startLocation: Double = 0.05
+    @IBInspectable open var endLocation: Double = 0.95
     
-    @IBInspectable public var horizontalMode: Bool = false
+    @IBInspectable open var horizontalMode: Bool = false
     
-    override public class func layerClass() -> AnyClass { return CAGradientLayer.self }
+    override open class var layerClass : AnyClass { return CAGradientLayer.self }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         guard let layer = layer as? CAGradientLayer else { return }
         if horizontalMode {
@@ -30,7 +30,7 @@ import UIKit
             layer.startPoint = CGPoint(x: 0.5, y: 0)
             layer.endPoint   = CGPoint(x: 0.5, y: 1)
         }
-        layer.locations = [startLocation, endLocation]
-        layer.colors    = [startColor.CGColor, endColor.CGColor]
+        layer.locations = [NSNumber(value: startLocation), NSNumber(value: endLocation)]
+        layer.colors    = [startColor.cgColor, endColor.cgColor]
     }
 }
