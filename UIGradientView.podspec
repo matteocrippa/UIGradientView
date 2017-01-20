@@ -13,8 +13,8 @@ s.author           = { 'Matteo Crippa' => '' }
 s.source           = { :git => 'https://github.com/matteocrippa/UIGradientView.git', :tag => s.version.to_s }
 s.social_media_url = 'https://twitter.com/ghego20'
 
-s.ios.deployment_target = '10.0'
-s.tvos.deployment_target = '10.0'
+s.ios.deployment_target = '9.0'
+s.tvos.deployment_target = '9.0'
 
 s.source_files = 'UIGradientView/Classes/**/*'
 
