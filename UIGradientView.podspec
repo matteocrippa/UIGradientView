@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'UIGradientView'
-s.version          = '0.2.0'
+s.version          = '0.3.0'
 s.summary          = 'An UIView that support gradients.'
 
 s.description      = <<-DESC
